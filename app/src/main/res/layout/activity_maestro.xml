@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itson.potrobeacon.MaestroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnLayoutBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingTop="10dp"
+                android:text="Agregar beacon"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtIdBeacon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ID"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnAgregarBeacon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="AgregarBeacon"
+                    android:text="Agregar beacon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnLayoutClase"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingTop="10dp"
+                android:text="Agregar clase"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/LayoutClase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtIdClase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ID"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Entrada:" />
+
+                    <Spinner
+                        android:id="@+id/spinnerEntrada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Salida:" />
+
+                    <Spinner
+                        android:id="@+id/spinnerSalida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:onClick="AgregarClase"
+                    android:text="Agregar clase" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnLayoutAlumno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtIdAlumno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ID"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnAgregarAlumno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="AgregarAlumno"
+                    android:text="Agregar Alumno" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtConsola"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
