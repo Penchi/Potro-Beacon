@@ -1,3 +1,5 @@
+//Código creado por Aarón Angulo
+
 package com.itson.potrobeacon.Datos;
 
 import java.util.List;
